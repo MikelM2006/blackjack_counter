@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador Blackjack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ================== CONTADOR ================== -->
+        <h1>Contador de Cartas Blackjack</h1>
+
+        <div class="counter">
+            <label>Mazos:</label>
+            <input type="number" id="deckInput" value="6" min="1" max="8">
+        </div>
+
+        <div id="cardPane" class="card-pane"></div>
+
+        <div class="labels">
+            <p id="runningCountLabel">Cuenta corriente: 0</p>
+            <p id="trueCountLabel">Cuenta verdadera: 0</p>
+        </div>
+
+        <button id="resetGameBtn">Reiniciar Conteo</button>
+
+        <hr>
+
+        <!-- ================== ESTRATEGIA ================== -->
+        <h2>Asistente de Estrategia</h2>
+
+        <div class="strategy">
+            <label>Carta del crupier:</label>
+            <select id="dealerCardBox">
+                <option value="">Selecciona</option>
+            </select>
+        </div>
+
+        <div id="playerCardPane" class="card-pane"></div>
+
+        <button id="resetHandBtn">Reset Mano</button>
+
+        <p id="basicStrategyLabel">Estrategia básica: -</p>
+        <p id="adjustedStrategyLabel">Ajustada a la cuenta: -</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

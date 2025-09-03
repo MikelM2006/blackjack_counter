@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.container {
+    display: inline-block;
+    padding: 20px;
+    background: rgb(202, 202, 202);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card-pane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input[type=number] {
+    width: 50px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
